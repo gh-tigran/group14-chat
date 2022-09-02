@@ -26,7 +26,7 @@ class MessagesController {
           required: true,
         }],
       });
-      Socket.emit(friendId, 'newMessage', message);
+      Socket.emit(friendId, '2', message);
 
       res.json({
         status: 'ok',
