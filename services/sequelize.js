@@ -55,12 +55,6 @@ const sequelize = new Sequelize(DB_NAME, DB_USER, DB_PASSWORD, {
   //   collate: 'utf8_general_ci',
   //   timestamps: true
   // },
-  reconnect: {
-    max_retries: 999,
-    onRetry: (count) => {
-      console.log(`connection lost, trying to reconnect (${count})`);
-    },
-  },
 });
 
 export default sequelize;
