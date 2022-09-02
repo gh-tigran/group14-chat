@@ -28,6 +28,7 @@ class Socket {
       if (isAdmin) {
         client.join('admin');
       }
+      console.log(client.userId);
 
       client.join(`user_${userId}`);
 
