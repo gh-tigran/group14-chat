@@ -33,6 +33,7 @@ class MessagesController {
       res.json({
         status: 'ok',
         message,
+        a,
       });
     } catch (e) {
       next(e);
