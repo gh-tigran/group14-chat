@@ -13,8 +13,6 @@ Messages.init({
     autoIncrement: true,
     primaryKey: true,
   },
-  // from: {},
-  // to: {},
   text: {
     type: DataTypes.TEXT,
   },
@@ -22,7 +20,6 @@ Messages.init({
     type: DataTypes.DATE,
     allowNull: true,
   },
-  // parentId: {},
 }, {
   tableName: 'messages',
   modelName: 'messages',
