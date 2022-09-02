@@ -27,6 +27,8 @@ class MessagesController {
         }],
       });
       Socket.emit(friendId, '2', message);
+      console.log(213123123);
+      const a = 123123 + 123123;
 
       res.json({
         status: 'ok',
